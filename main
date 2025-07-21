@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>استبيان حول تأثير النظام الغذائي السوداني</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 40px;
+      background: #f7f7f7;
+      color: #333;
+      direction: rtl;
+    }
+    h1, h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 30px;
+      background: #fff;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      direction: rtl;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-left: 10px;
+    }
+    .submit-button {
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .submit-button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>استبيان حول تأثير النظام الغذائي السوداني على السلوك والأمراض غير المعدية</h1>
+
+  <p>
+    أنا <strong>[اسمك الكامل]</strong>، طالب في قسم الصحة العامة بكلية العلوم الصحية – جامعة زالنجي.
+    <br><br>
+    أرجو تخصيص <strong>10–15 دقيقة</strong> من وقتك للمشاركة في هذا الاستبيان الذي يهدف إلى دراسة العلاقة بين النظام الغذائي السوداني والسلوكيات الصحية وأمراض مثل: السكري، ارتفاع ضغط الدم، تضخم الغدة الدرقية، وغيرها من الأمراض غير المعدية.
+    <br><br>
+    جميع المعلومات ستُستخدم لأغراض أكاديمية فقط، وستُعامل بسرية تامة.
+    <br><br>
+    يمكنك إرسال النسخة المعبأة عبر البريد الإلكتروني إلى: <strong>[YourEmail@example.com]</strong>
+  </p>
+
+  <form action="#" method="POST">
+    <fieldset>
+      <legend>القسم الأول: المعلومات الشخصية</legend>
+      <label>العمر: <input type="text" name="age"></label>
+      <label>الجنس:
+        <select name="gender">
+          <option>ذكر</option>
+          <option>أنثى</option>
+          <option>أخرى</option>
+        </select>
+      </label>
+      <label>مكان الإقامة:
+        <select name="residence">
+          <option>حضري</option>
+          <option>ريفي</option>
+        </select>
+      </label>
+      <label>المهنة: <input type="text" name="occupation"></label>
+      <label>المستوى التعليمي:
+        <select name="education">
+          <option>ابتدائي</option>
+          <option>ثانوي</option>
+          <option>جامعي</option>
+          <option>دراسات عليا</option>
+        </select>
+      </label>
+      <label>الحالة الاجتماعية:
+        <select name="marital">
+          <option>أعزب</option>
+          <option>متزوج</option>
+          <option>مطلق</option>
+          <option>أرمل</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>القسم الثاني: العادات الغذائية</legend>
+      <label>كم عدد الوجبات التي تتناولها يومياً؟
+        <select name="meals_per_day">
+          <option>وجبة واحدة</option>
+          <option>وجبتين</option>
+          <option>ثلاث وجبات</option>
+          <option>أكثر من ثلاث وجبات</option>
+        </select>
+      </label>
+
+      <label>ما مدى تكرار تناولك للأطعمة التالية أسبوعياً؟</label>
+
+      <label>الذرة/الدخن:
+        <select name="sorghum">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>الخبز/الدقيق:
+        <select name="bread">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>الخضروات:
+        <select name="vegetables">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>الفواكه:
+        <select name="fruits">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>اللحوم:
+        <select name="meat">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>منتجات الألبان:
+        <select name="dairy">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>البقوليات:
+        <select name="legumes">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>الطعام المقلي/الزيوت:
+        <select name="oily_foods">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>الحلويات/المشروبات السكرية:
+        <select name="sugary_foods">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+      <label>الأطعمة المالحة أو المصنعة:
+        <select name="processed_foods">
+          <option>أبداً</option><option>1–2 مرات</option><option>3–5 مرات</option><option>يومياً</option>
+        </select>
+      </label>
+
+      <label><input type="checkbox" name="extra_salt"> أضيف الملح إلى الطعام بانتظام</label>
+      <label>هل تستخدم ملح مدعم باليود؟
+        <select name="iodized_salt">
+          <option>نعم</option><option>لا</option><option>غير متأكد</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>القسم الثالث: الصحة العامة</legend>
+      <label>هل تم تشخيصك بأحد الأمراض التالية؟</label>
+      <label><input type="checkbox" name="conditions" value="diabetes"> السكري</label>
+      <label><input type="checkbox" name="conditions" value="hypertension"> ارتفاع ضغط الدم</label>
+      <label><input type="checkbox" name="conditions" value="goiter"> تضخم الغدة الدرقية</label>
+      <label><input type="checkbox" name="conditions" value="obesity"> السمنة</label>
+      <label><input type="checkbox" name="conditions" value="cholesterol"> الكوليسترول</label>
+      <label><input type="checkbox" name="conditions" value="none"> لا شيء مما سبق</label>
+
+      <label>هل يوجد تاريخ عائلي لهذه الأمراض؟
+        <select name="family_history">
+          <option>نعم</option><option>لا</option>
+        </select>
+      </label>
+
+      <label>كم مرة تراجع الطبيب؟
+        <select name="checkups">
+          <option>بشكل منتظم</option>
+          <option>أحياناً</option>
+          <option>عند المرض فقط</option>
+          <option>لا أراجع</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>القسم الرابع: نمط الحياة والسلوك</legend>
+      <label>كم مرة تشعر بالإرهاق خلال اليوم؟
+        <select name="fatigue">
+          <option>نادراً</option><option>أحياناً</option><option>كثيراً</option><option>دائماً</option>
+        </select>
+      </label>
+
+      <label>هل تلاحظ تغيراً في المزاج بعد تناول أطعمة معينة؟
+        <select name="mood">
+          <option>نعم</option><option>لا</option><option>غير متأكد</option>
+        </select>
+      </label>
+
+      <label>عدد ساعات النوم يومياً:
+        <select name="sleep">
+          <option>أقل من 4</option><option>4–6</option><option>6–8</option><option>أكثر من 8</option>
+        </select>
+      </label>
+
+      <label>عدد مرات ممارسة الرياضة:
+        <select name="exercise">
+          <option>يومياً</option><option>2–3 مرات/أسبوع</option><option>نادراً</option><option>لا أمارس</option>
+        </select>
+      </label>
+
+      <label><input type="checkbox" name="caffeine"> أتناول الشاي أو القهوة بانتظام</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>القسم الخامس: الوعي والآراء</legend>
+      <label>هل تعتقد أن النظام الغذائي يؤثر على الصحة النفسية والعاطفية؟
+        <select name="diet_mind">
+          <option>أوافق بشدة</option><option>أوافق</option><option>لا أوافق</option><option>لا أوافق بشدة</option>
+        </select>
+      </label>
+
+      <label>هل تعلم أن سوء التغذية قد يسبب أمراض مثل السكري أو الضغط؟
+        <select name="awareness">
+          <option>نعم</option><option>لا</option>
+        </select>
+      </label>
+
+      <label>هل أنت مستعد لتغيير نظامك الغذائي للوقاية من الأمراض؟
+        <select name="willing_to_change">
+          <option>نعم</option><option>لا</option><option>ربما</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>القسم السادس: أسئلة مفتوحة</legend>
+      <label>ما هي أكثر الأطعمة التي تتناولها بشكل يومي؟</label>
+      <textarea name="common_foods" rows="3"></textarea>
+
+      <label>ما هي أسباب المشكلات الصحية المرتبطة بالغذاء في رأيك؟</label>
+      <textarea name="causes" rows="3"></textarea>
+
+      <label>هل لديك اقتراحات لتحسين العادات الغذائية في السودان؟</label>
+      <textarea name="suggestions" rows="3"></textarea>
+    </fieldset>
+
+    <input type="submit" class="submit-button" value="إرسال">
+
+  </form>
+
+</body>
+</html>
